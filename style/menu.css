@@ -1,0 +1,29 @@
+#btn-mobile {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    width: 100%;
+    top: 115px;
+    right: 0;
+    background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
+    flex-direction: column;
+    height: 0;
+    transition: 0.5s;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+nav.active .menu {
+    height: calc(50vh - 125px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.menu li {
+    padding: 0 7%;
+}

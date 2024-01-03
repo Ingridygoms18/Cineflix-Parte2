@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" media="all">
+    <link rel="stylesheet" href="style/mobie.css" media="screen and (max-width: 550px)">
+    <link rel="stylesheet" href="style/tablet.css" media="screen and (min-width: 550px) and (max-width: 800px)">
+    <link rel="stylesheet" href="style/menu.css"  media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cineflix</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <a href="index.html" class="logo"><img src="img/CINEFLIX (1).png" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+                <li id="liProducts"><a href="#">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Documentários</a></li>
+                        <li><a href="#">Combos</a></li>
+                    </ul>
+                </li>
+                <li id="liProducts"><a href="#">Promotions</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Alugueis</a></li>
+                        <li><a href="#">Compras</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacts</a></li>
+                <li id="liLogin"><a href="login.html">Login</a></li>
+                <li><a class="material-symbols-outlined">add_shopping_cart</a></li>
+            </ul>
+            <button class="material-symbols-outlined" id="btn-mobile" onclick="toggleMenu()">menu</button>
+        </nav>
+    </header>
+    <section class="background-img">
+        <div class="grandiente">
+            <div class="informar">
+                <div id="card">
+                    <p> Assine canais para todas as idades</p>
+                    <p id="prominence_cyberKid">CINEFLIX</p>
+                    <p>Vá ao cinema sem sair de casa </p>
+                    <button>Apriveite já!</button>
+                </div>
+                <div id="card-img">
+                    <img src="img/Cyber_copy.png" alt="image cyber kid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="best-Selling-Product">
+        <header>
+            <h2 class="titles-Section-Products">FILMES:</h2>
+        </header>>
+        <div class="wrapper">
+            <i id="left" class="material-symbols-outlined">arrow_back_ios</i>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/invocacaaodomal.jpg" alt="img">
+                        <p>Invocação do mal</p>
+                        <span>R$ 20,99</span>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/batman.jpg.jpg" alt="img">
+                        <p>Batman</p>
+                        <span>R$ 19,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/continenciasdoamor.jpg" alt="img">
+                        <p>Continências do Amor</p>
+                        <span>R$ 10,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/megan.jpg.jpg" alt="img">
+                        <p> Megan</p>
+                        <span>R$ 28,89</span>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/theprincess.jpg" alt="img">
+                        <p>The Princess</p>
+                        <span>R$ 5,99</span>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/crepusculo.jpg" alt="img">
+                        <p> Crepúsculo</p>
+                        <span>R$ 25,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/it.jpg" alt="img">
+                        <p>It A coisa</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/gosthed.jpg" alt="img">
+                        <p>Gosthed</p>
+                        <span>R$ 7,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/doisirmaos.jpg" alt="img">
+                        <p>Dois irmãos</p>
+                        <span>R$ 9,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/filmes/jurassic.jpg" alt="img">
+                        <p>Jurassic World </p>
+                        <span>R$ 19,99</span>
+                        <button>Comprar</button>
+                    </div>
+            <i id="right" class="material-symbols-outlined">arrow_forward_ios</i>
+        </div>
+    </section>
+
+    <section class="category-Section">
+        <h2 class="titles-Section-Products">SÉRIES:</h2>
+        <div class="group-cards-category">
+            <div class="card-carusel">
+                <img class="img-carusel" src="img/séries/supernatural.jpg" alt="img">
+                <p>Supernatural</p>
+                <span>R$ 39,99</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card-carusel">
+                <img class="img-carusel" src="img/séries/thewalking.jpg" alt="img">
+                <p>The Walking Dead</p>
+                <span>R$ 50,99</span>
+                <button>Alugar</button>    
+            </div>
+
+            <div class="card-carusel">
+                <img class="img-carusel" src="img/séries/teenwolf.jpg" alt="img">
+                <p>Teen Wolf</p>
+                <span>R$ 41,99</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-Selling-Product">
+        <header>
+            <h2 class="titles-Section-Products">DOCUMENTÁRIOS:</h2>
+            <button>See more</button>
+        </header>>
+        <div class="wrapper">
+            <i id="left" class="material-symbols-outlined">arrow_back_ios</i>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/chernobyl.jpg" alt="img">
+                        <p>chernobyl</p>
+                        <span>R$ 51,99</span>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/dahmer.jpg" alt="img">
+                        <p>Dahmer</p>
+                        <span>R$ 99,99</span>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/retratos.jpg" alt="img">
+                        <p>Retratos fantasmas</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/retratos.jpg" alt="img">
+                        <p>Retratos fantasmas</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/retratos.jpg" alt="img">
+                        <p>Retratos fantasmas</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/retratos.jpg" alt="img">
+                        <p>Retratos fantasmas</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+                    <div class="card-carusel">
+                        <img class="img-carusel" src="img/documentarios/retratos.jpg" alt="img">
+                        <p>Retratos fantasmas</p>
+                        <span>R$ 49,99</span>
+                        <button>Alugar</button>
+                    </div>
+            <i id="right" class="material-symbols-outlined">arrow_forward_ios</i>
+        </div>
+    </section>
+
+    <section class="section-spend-earn">
+        <div class="grandiente" id="grandiente-spend-earn">
+            <h2>PROMOÇÃO:</h2>
+            <p>Use o cupom de desconto para ganhar até 50 reais de desconto</p>
+            <button>Clique aqui</button>
+        </div>
+    </section>
+
+    <section class="signature-section">
+        <div class="background-one-signature-section">
+            <div id="grandiente">
+                <h2>JOGOS:</h2>
+                <p>Subscribe and receive updates on<br>new products and special offers</p>
+                <form action="email">
+                    <label>Email*</label>
+                    <input type="email">
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="background-two-signature-section">
+            <img src="img/cinema.webp" alt="cds">
+        </div>
+    </section>
+
+   <footer>
+    <section class="partonefooter">
+        <div class="card-footer">
+            <img src="img/CINEFLIX (1).png" alt="logo">
+        </div>
+        <div class="card-footer">
+            <p><strong>Products</strong></p>
+            <p href="#">Filmes</p>
+            <p href="#">Series</p>
+            <p href="#">Combos</p>
+            <p href="#">Promoções</p>
+        </div>
+        <div class="card-footer">
+            <p><strong>App</strong></p>
+            <p href="#">Rua x, 194, neighborhood joão e maria</p>
+            <p href="#">Monday to Friday.: 9:00 to 21:00</p>
+            <p href="#">info@cineflix.com</p>
+            <p href="#">(84) 3456 - 7890</p>
+        </div>
+    </section>
+
+    <section class="parttwofooter">
+        <div class="elements-parttwofooter">
+            <p><strong>Redes sociais:</strong></p>
+            <div class="icon">
+                <img src="img/Facebook.png" alt="Facebook">
+                <img src="img/Instagram.png" alt="Instagram">
+                <img src="img/Twitter.png" alt="Twitter">
+                <img src="img/Youtube.png" alt="Youtube">
+            </div>
+        </div>
+
+        <div class="elements-parttwofooter">
+            <p><strong>Formas de pagamento:</strong></p>
+            <div class="icon2">
+                <img src="img/american-express.png" alt="american-express">
+                <img src="img/credit-card.png" alt="Cartão">
+                <img src="img/paypal.png" alt="paypal">
+                <img src="img/visa.png" alt="visa">
+            </div>
+        </div>
+    </section>
+   
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>

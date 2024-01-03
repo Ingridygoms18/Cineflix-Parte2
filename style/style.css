@@ -1,0 +1,410 @@
+:root {
+    --color_0: rgb(60, 38, 93);
+    --color_1: rgb(57, 5, 61);
+    --color_2: rgb(36, 21, 60);
+    --color_3: rgb(108, 54, 222);
+    --color_4: rgb(11, 3, 28);
+    --color_5: rgb(132, 85, 230);
+    --color_6: rgb(35, 34, 35);
+    --color_7: rgb(22, 22, 22);
+    --color_8: rgb(43, 42, 43);
+    --color_9: rgb(255, 255, 255);
+    --color_10: rgb(0, 0, 0);
+    --color-font: rgb(255, 255, 255);
+    --color-buttom: rgb(255, 255, 255);
+    --font_1: montserrat, sans-serif;
+    --font_2: normal normal bold 70px/1em montserrat, sans-serif;
+    --font_3: normal normal bold 22px/1.5em roboto-thin, roboto, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font_1);
+}
+
+.mainHeader {
+    background-image: linear-gradient(90deg, var(--color_0), var(--color_1), var(--color_2));
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.768);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 5%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--color-font);
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: var(--color_3);
+}
+
+#liProducts:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--color_4);
+    list-style: none;
+    border-radius: 2px;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.dropdown a {
+    display: block;
+}
+
+#liLogin {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+#btn-mobile {
+    display: none;
+    color: var(--color-font);
+    background-color: transparent;
+    border: none;
+}
+
+.background-img {
+    background-image: url(../img/a.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.grandiente {
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+.informar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 90%;
+    padding-top: 5%;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 35%;
+    height: 50%;
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.900);
+    border-radius: 20px;
+    padding: 2% 0px 4% 4%;
+    background-color: var(--color_5);
+    color: var(--color-font);
+    font-size: 1.9vw;
+    font-family: var(--font_3);
+}
+
+#prominence_cyberKid {
+    font-size: 5vw;
+    font-family: var(--font_2);
+}
+
+#card button {
+    color: var(--color_3);
+    font-size: 1.3vw;
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 2%;
+    width: 30%;
+}
+
+
+#card-img img {
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(25, 25, 25, 0.900);
+    border-radius: 20px;
+}
+
+.best-Selling-Product {
+    background-color: var(--color_10);
+    height: 90vh;
+    padding: 5%;
+}
+
+h2 {
+    color: var(--color-font);
+    font-size: 3em;
+}
+
+.best-Selling-Product button {
+    background-color: var(--color-buttom);
+    color: var(--color_5);
+    border-radius: 50px;
+    width: 15%;
+    height: 40px;
+    border-color: transparent;
+    font-size: 1.3em;
+}
+
+.best-Selling-Product header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper i {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 2em;
+    text-align: center;
+    color: var(--color-font);
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: 20px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: 20px;
+}
+
+.card-carusel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+    text-align: center;
+    color: var(--color-font);
+}
+
+.card-carusel p {
+    font-size: 1.2em;
+}
+
+.card-carusel button {
+    width: 40%;
+    padding: 4px;
+    font-size: 1.1em;
+    color: var(--color-font);
+    background-color: var(--color_3);
+    border-radius: 5px;
+}
+
+.carusel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.img-carusel {
+    width: 300px;
+    height: 300px;
+}
+
+.category-Section {
+    background-image: linear-gradient(8deg, var(--color_8), var(--color_6), var(--color_7));
+    padding: 80px;
+}
+
+.group-cards-category {
+    display: flex;
+    gap: 5vw;
+    padding-top: 80px;
+}
+
+.card-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-category img {
+    width: 25vw;
+    border-radius: 30px;
+    box-shadow: 0px 4px 12px rgba(25, 25, 25, 0.926);
+}
+
+.card-category p {
+    color: var(--color-font);
+    font-size: 1.5em;
+}
+
+.section-spend-earn {
+    background-image: url(../img/b.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+#grandiente-spend-earn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.section-spend-earn h2 {
+    font-size: 4em;
+}
+
+.section-spend-earn p {
+    color: var(--color-font);
+    font-size: 1.4em;
+}
+
+.section-spend-earn button {
+    background-color: var(--color_5);
+    border-radius: 50px;
+    border-color: transparent;
+    color: var(--color-font);
+    font-size: 1.3em;
+    padding: 7px;
+    margin-top: 20px;
+}
+
+.background-one-signature-section {
+    background-image: url(../img/d.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    color: var(--color-font);
+}
+
+#grandiente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+}
+
+.background-one-signature-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.background-one-signature-section form button {
+    width: 100.5%;
+    height: 7vh;
+    font-size: 1em;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: transparent;
+}
+
+.background-one-signature-section form button:hover {
+    background-color: var(--color_5);
+    color: var(--color-font);
+}
+
+.background-one-signature-section form input {
+    width: 100%;
+    height: 7vh;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: var(--color-font);
+    border-bottom: none;
+    color: var(--color-font);
+    font-size: 2em;
+    background-color: transparent;
+}
+
+
+.background-two-signature-section {
+    background-image: url(../img/c.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-two-signature-section img {
+    margin-bottom: 100px;
+    width: 45vw;
+    height: 20vw;
+}
+
+.partonefooter {
+    background-color: var(--color_10);
+    color: var(--color-font);
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    padding: 5%;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parttwofooter {
+    display: flex;
+    padding: 20px 15%;
+}
+
+.elements-parttwofooter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    gap: 15 px;   
+     padding-right: 50px;
+
+}
+
+.icon2 {
+    display: flex;
+    gap: 15px;
+}
+.partthreefooter {
+    background-color: var(--color_10);
+    color: var(--color_5);
+    padding: 20px 15%
+}

@@ -1,0 +1,94 @@
+.background-img {
+    height: 120vh;
+}
+
+.grandiente {
+    height: 120vh;
+}
+
+.informar {
+    flex-direction: column;
+    align-items: center;
+}
+
+#card {
+    width: 77%;
+    font-size: 4vw;
+}
+
+#card button {
+    font-size: 2.5vw;
+}
+
+#prominence_cyberKid {
+    font-size: 8vw;
+}
+
+#card-img {
+    width: 80%;
+}
+
+.group-cards-category {
+    flex-direction: column;
+}
+
+.card-category img {
+    width: 90vw;
+}
+
+.best-Selling-Product button {
+    width: 30%;
+}
+
+.best-Selling-Product header {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper i:first-child {
+    left: 12px;
+}
+
+.section-spend-earn h2 {
+    font-size: 2em;
+}
+
+.section-spend-earn p {
+    font-size: 1.2em;
+}
+
+.carusel img {
+    width: 100%;
+}
+
+.background-one-signature-section h2 {
+    font-size: 2em;
+}
+
+.background-one-signature-section form {
+    width: 80vw;
+}
+
+.background-two-signature-section {
+    height: 20vh;
+}
+
+.background-two-signature-section img {
+    width: 95vw;
+}
+
+.partonefooter {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-footer img {
+    width: 50vw;
+}
+
+.parttwofooter {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+}
+
